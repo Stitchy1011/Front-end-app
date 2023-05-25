@@ -6,7 +6,6 @@ class App extends Component {
     render() {
         return (
             <div>
-
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
@@ -57,13 +56,22 @@ class App extends Component {
 
                 <div className="container">
                     <Routes>
+                        <Route path="/" />
+                        <Route path="/menu" />
+                        <Route path="/connexion" />
+                        <Route path="/inscription" />
+                        <Route path="/dashboard" />
+                    </Routes>
+                </div> {/*
+                <div className="container">
+                    <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/menu" element={<MenuList/>}/>
                         <Route path="/connexion" element={<loginForm/>}/>
                         <Route path="/inscription" element={<registerForm/>}/>
                         <Route path="/dashboard" element={<Dasboard/>}/>
                     </Routes>
-                </div>
+                </div> */}
             </div>
             // Routes
 
