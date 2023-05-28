@@ -1,6 +1,11 @@
 import React, { Component} from "react";
 import { Routes, Route, Link,} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "mdbootstrap/css/bootstrap.min.css"
+import "./App.css"
+
+import loginForm from "./components/auth/login.component";
+
 
 class App extends Component {
     render() {
@@ -36,7 +41,7 @@ class App extends Component {
                             </li>
 
                             <li className="nav-item dropdown">
-                                <Link to={"#"} className="nav-link">Connexion / Inscription</Link>
+                                <Link to={""} className="nav-link">Connexion / Inscription</Link>
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link to={"/connexion"} className="nav-link">Connexion</Link>
@@ -58,7 +63,7 @@ class App extends Component {
                     <Routes>
                         <Route path="/" />
                         <Route path="/menu" />
-                        <Route path="/connexion" />
+                        <Route path="/connexion" element={<loginForm/>}/>
                         <Route path="/inscription" />
                         <Route path="/dashboard" />
                     </Routes>
@@ -72,6 +77,7 @@ class App extends Component {
                         <Route path="/dashboard" element={<Dasboard/>}/>
                     </Routes>
                 </div> */}
+
             </div>
             // Routes
 

@@ -25,3 +25,5 @@ class ProcurementDataService {
         return http.get(`/procurements?id=${id}`);
     }
 }
+
+export default new ProcurementDataService();

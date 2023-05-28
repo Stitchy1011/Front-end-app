@@ -25,3 +25,5 @@ class StatusDataService {
         return http.get(`/statuss?id=${id}`);
     }
 }
+
+export default new StatusDataService();

@@ -25,3 +25,5 @@ class PlateDataService {
         return http.get(`/plates?id=${id}`);
     }
 }
+
+export default new PlateDataService();

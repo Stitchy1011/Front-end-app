@@ -25,3 +25,5 @@ class TypePlateDataService {
         return http.get(`/typePlates?id=${id}`);
     }
 }
+
+export default new TypePlateDataService();

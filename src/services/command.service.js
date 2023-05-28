@@ -25,3 +25,5 @@ class CommandDataService {
         return http.get(`/commands?id=${id}`);
     }
 }
+
+export default new CommandDataService();

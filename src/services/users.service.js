@@ -25,3 +25,5 @@ class UserDataService {
         return http.get(`/users?id=${id}`);
     }
 }
+
+export default new UserDataService();

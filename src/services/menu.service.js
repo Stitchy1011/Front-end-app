@@ -25,3 +25,5 @@ class MenuDataService {
         return http.get(`/menus?id=${id}`);
     }
 }
+
+export default new MenuDataService();
