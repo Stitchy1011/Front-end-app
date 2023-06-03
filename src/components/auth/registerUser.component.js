@@ -28,7 +28,7 @@ const registerForm = () => {
 				// signup(values.email, values.password);
 				resetForm();
 			}}>
-			<Container></Container>
+			<Container>
 				<AuthForm className="page-login">
 					<H1>Créez votre compte</H1>
 					<H2>Rejoignez nous et créez votre compte dès maintenant</H2>
