@@ -1,12 +1,16 @@
-import React, { Component} from "react";
-import { Routes, Route, Link,} from "react-router-dom";
+import React from "react";
+import Routing from "./routes/routes";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "mdbootstrap/css/bootstrap.min.css"
-import "./App.css"
-
-import loginForm from "./components/auth/login.component";
 
 
+//import loginForm from "./components/auth/loginUser.component";
+
+
+function App() {
+    return <Routing />
+}
+
+/*
 class App extends Component {
     render() {
         return (
@@ -20,7 +24,7 @@ class App extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">{/*
+                        <ul className="navbar-nav">{/!*
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -32,7 +36,7 @@ class App extends Component {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link disabled">Disabled</a>
-                            </li>*/}
+                            </li>*!/}
                             <li className="nav-item">
                                 <Link to={"/"} className="nav-link">Accueil</Link>
                             </li>
@@ -67,7 +71,7 @@ class App extends Component {
                         <Route path="/inscription" />
                         <Route path="/dashboard" />
                     </Routes>
-                </div> {/*
+                </div> {/!*
                 <div className="container">
                     <Routes>
                         <Route path="/" element={<Home/>}/>
@@ -76,7 +80,7 @@ class App extends Component {
                         <Route path="/inscription" element={<registerForm/>}/>
                         <Route path="/dashboard" element={<Dasboard/>}/>
                     </Routes>
-                </div> */}
+                </div> *!/}
 
             </div>
             // Routes
@@ -84,5 +88,6 @@ class App extends Component {
         )
     }
 }
+*/
 
 export default App;
